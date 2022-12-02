@@ -5,18 +5,14 @@ import { useState } from 'react'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-
-
-
-
-
 export default function SignUp() {
 const [form, setForm] = useState({})
 
   const submitPost = (e) => {
-    e.preventDefault()
+      e.preventDefault()
+      console.log(form)
 
-    fetch('http://localhost:3030/signup', {
+    fetch('https://buying-real-estate-api-v-c7168.web.app/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +20,7 @@ const [form, setForm] = useState({})
       body: JSON.stringify(form),
     })
     alert("Message Sent")
-    console.log(form)
+
   }
 
   const handleForm = (e) => {
@@ -34,10 +30,15 @@ const [form, setForm] = useState({})
   console.log(form)
 
   return (
-    <Form>
+    <Form onSubmit={submitPost}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" onChange={handleForm}/>
+
+        <Form.Control 
+        name='email' //Need name
+         type="email" placeholder="Enter email" 
+         onChange={handleForm}/> {/*need onChange for each field */}
+
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
@@ -45,44 +46,44 @@ const [form, setForm] = useState({})
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password"onChange={handleForm} />
+        <Form.Control name='password' type='password' placeholder="Password"onChange={handleForm} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check name='checkbox' type="checkbox" label="Check me out" />
       </Form.Group>
       <Button variant="primary" type="submit" onClick={submitPost}>
         Submit
       </Button>
 
-<Row>
+{/* <Row>
   <Col>
-    <Form.Control placeholder="First name" />
+    <Form.Control name='First Name' placeholder="First name" />
   </Col>
   <Col>
-    <Form.Control placeholder="Last name" />
+    <Form.Control name='Last Name' placeholder="Last name" />
   </Col>
 </Row>
 
 <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control name='email' type="email" placeholder="Enter email" />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control name='password' type="password" placeholder="Password" />
         </Form.Group>
       </Row>
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" />
+        <Form.Control name='Address'placeholder="1234 Main St" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress2">
         <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
+        <Form.Control name='Address 2'placeholder="Apartment, studio, or floor" />
       </Form.Group>
 
       <Row className="mb-3">
@@ -106,12 +107,12 @@ const [form, setForm] = useState({})
       </Row>
 
       <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check name='checkbox'type="checkbox" label="Check me out" />
       </Form.Group>
 
       <Button variant="primary" type="submit">
         Submit
-      </Button>
+      </Button> */}
 
 </Form>
 

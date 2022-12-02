@@ -21,6 +21,6 @@ export default function AboutUs() {
 
 // export default function AboutUs(){
 //     return (
-//         <h1>About Us</h1>
+//         <h1></h1>
 //     )
 // }

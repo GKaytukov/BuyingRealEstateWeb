@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import { useNavigate } from 'react-router-dom';
 
 export default function ApplyForFunding() {
 const [form, setForm] = useState({})
@@ -15,15 +16,20 @@ const [form, setForm] = useState({})
           formDataObj = Object.fromEntries(formData.entries())
           console.log(formDataObj)
   
-    fetch('http://localhost:3030/applyforfunding', {
+    fetch('https://buying-real-estate-web.web.app/applyforfunding', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formDataObj),
     })
+    .then(response => response.json())
+    .then(data => {
+      navigate('/ChooseALender')
+    })
     alert("Message Sent")
   }
+  const navigate = useNavigate()
 
   
 
@@ -61,7 +67,15 @@ const [form, setForm] = useState({})
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
       </Row>
-      <Row className="mb-3">
+      <Form.Group className="mb-3">
+        <Form.Group as={Col} md="6" controlId="validationCustom03">
+          <Form.Label>Address</Form.Label>
+          <Form.Control type="text" placeholder="Address" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid address.
+          </Form.Control.Feedback>
+        </Form.Group>
+      <Form.Group className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>City</Form.Label>
           <Form.Control type="text" placeholder="City" required />
@@ -83,12 +97,37 @@ const [form, setForm] = useState({})
             Please provide a valid zip.
           </Form.Control.Feedback>
         </Form.Group>
-      </Row>
+        <InputGroup className="mb-3">
+        <Form.Label>Please Check Box: 2 Most Recent Paystubs</Form.Label>
+        <InputGroup.Checkbox aria-label="2 Most Recent Paystubs" />
+        <Form.Control aria-label="Text input with checkbox" />
+      </InputGroup>
+      <InputGroup>
+      <Form.Label>Please Check Box: 2 Months of your most Recent Bank Statement </Form.Label>
+        <InputGroup.Checkbox aria-label="Radio button for following text input" />
+        <Form.Control aria-label="Text input with radio button" />
+      </InputGroup>
+      <InputGroup>
+      <Form.Label>Please Check Box: 2 Most Recent Tax Returns</Form.Label>
+        <InputGroup.Checkbox aria-label="Radio button for following text input" />
+        <Form.Control aria-label="Text input with radio button" />
+      </InputGroup>
+      <InputGroup>
+      <Form.Label>Please Check Box: For List of Other Income</Form.Label>
+        <InputGroup.Checkbox aria-label="Radio button for following text input" />
+        <Form.Control aria-label="Text input with radio button" />
+      </InputGroup>
+      </Form.Group>
 
       <Button variant="primary" type="submit" >
         Submit
       </Button>
+    </Form.Group>
+  
     </Form>
   )
   
   }
+
+  
+
