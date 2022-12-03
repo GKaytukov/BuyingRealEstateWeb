@@ -7,7 +7,8 @@ import Row from 'react-bootstrap/Row';
 import { useNavigate } from 'react-router-dom';
 
 export default function ApplyForFunding() {
-const [form, setForm] = useState({})
+  const [form, setForm] = useState({})
+  const navigate = useNavigate()
 
   const submitPost = (e) => {
 
@@ -16,7 +17,8 @@ const [form, setForm] = useState({})
           formDataObj = Object.fromEntries(formData.entries())
           console.log(formDataObj)
   
-    fetch('https://buying-real-estate-web.web.app/applyforfunding', {
+    fetch('https://buying-real-estate-api-v-c7168.web.app/applyforfunding', {
+    // fetch('http://127.0.0.1:4050/applyforfunding', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,12 +26,13 @@ const [form, setForm] = useState({})
       body: JSON.stringify(formDataObj),
     })
     .then(response => response.json())
-    .then(data => {
+    .then(() => {
+      alert("Message Sent")
+      // 
+      
       navigate('/ChooseALender')
     })
-    alert("Message Sent")
   }
-  const navigate = useNavigate()
 
   
 
@@ -46,15 +49,19 @@ const [form, setForm] = useState({})
         </Form.Group>
         <Form.Group as={Col} md="4" controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
-          <Form.Control
+          <Form.Control   //<=== IT GOES IN THIS ATTRIBUTE
             required
             type="text"
             placeholder="First name"
             defaultValue="Mark"
-            name="firstname"
+            name="firstname"    //<=== THIS ONE 
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
+
+
+
+
         <Form.Group as={Col} md="4" controlId="validationCustom02">
           <Form.Label>Last name</Form.Label>
           <Form.Control
@@ -66,60 +73,104 @@ const [form, setForm] = useState({})
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
+
+
+
+
+
       </Row>
       <Form.Group className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>Address</Form.Label>
-          <Form.Control type="text" placeholder="Address" required />
+          <Form.Control 
+          required
+          type="text"
+          placeholder="Address"
+          defaultValue="Address"
+          name="address"
+        />  {/*<==== ITS NOT HERE :( */}
           <Form.Control.Feedback type="invalid">
             Please provide a valid address.
           </Form.Control.Feedback>
         </Form.Group>
       <Form.Group className="mb-3">
+
+        
         <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>City</Form.Label>
-          <Form.Control type="text" placeholder="City" required />
+          <Form.Control 
+          required
+          type="text" 
+          placeholder="City" 
+          defaultValue=''
+          name='city'
+           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid city.
           </Form.Control.Feedback>
         </Form.Group>
+
+
+
+
+
+
         <Form.Group as={Col} md="3" controlId="validationCustom04">
           <Form.Label>State</Form.Label>
-          <Form.Control type="text" placeholder="State" required />
+          <Form.Control
+          required 
+          type="text" 
+          placeholder="State" 
+          defaultValue=''
+          name='state'
+           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid state.
           </Form.Control.Feedback>
+
+
+
+
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom05">
           <Form.Label>Zip</Form.Label>
-          <Form.Control type="text" placeholder="Zip" required />
+          <Form.Control 
+          required
+          type="text" 
+          placeholder="Zip" 
+          defaultValue=''
+          name='zip'
+          />
           <Form.Control.Feedback type="invalid">
             Please provide a valid zip.
           </Form.Control.Feedback>
         </Form.Group>
+
+
+
         <InputGroup className="mb-3">
-        <Form.Label>Please Check Box: 2 Most Recent Paystubs</Form.Label>
+        <h1>Please Check Box: 2 Most Recent Paystubs</h1>
         <InputGroup.Checkbox aria-label="2 Most Recent Paystubs" />
         <Form.Control aria-label="Text input with checkbox" />
       </InputGroup>
       <InputGroup>
-      <Form.Label>Please Check Box: 2 Months of your most Recent Bank Statement </Form.Label>
+      <h1>Please Check Box: 2 Months of your most Recent Bank Statement </h1>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>
       <InputGroup>
-      <Form.Label>Please Check Box: 2 Most Recent Tax Returns</Form.Label>
+      <h1>Please Check Box: 2 Most Recent Tax Returns</h1>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>
       <InputGroup>
-      <Form.Label>Please Check Box: For List of Other Income</Form.Label>
+      <h1>Please Check Box: For List of Other Income</h1>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>
       </Form.Group>
 
-      <Button variant="primary" type="submit" >
+      <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form.Group>

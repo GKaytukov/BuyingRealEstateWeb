@@ -6,13 +6,14 @@ import Footer from './components/Footer'
 import AboutUs from './pages/AboutUs'
 import UserApplication from './pages/UserApplication'
 import CheckList from './pages/CheckList'
-//import ChoosingTheBestRealtor from './pages/ChooseALender'
+import ChooseALender from './pages/ChooseALender';
 import ApplyForFunding from './pages/ApplyForFunding'
 import FunFacts from './pages/FunFacts'
 import ContactUs from './pages/ContactUs'
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Home from './pages/Home';
+
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Route path='/checklist' element={<CheckList/>}/>
         <Route path='/userapplication' element={<UserApplication/>}/>
         <Route path='/applyforfunding' element={<ApplyForFunding/>}/>
-        {/* <Route path='/choosingthebestrealtor' element={<ChoosingTheBestRealtor/>}/> */}
+        <Route path='/choosealender' element={<ChooseALender/>}/>
         <Route path='/applyforfunding' element={<ApplyForFunding/>}/>
         <Route path='/funfacts' element={<FunFacts/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>

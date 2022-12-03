@@ -4,6 +4,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 export default function ChooseALender() {
   return (
     <>
+    <h1>Choose A Lender</h1>
       <InputGroup className="mb-3">
         <InputGroup.Checkbox aria-label="Checkbox for following text input" />
         <Form.Control aria-label="Text input with checkbox" />

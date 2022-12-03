@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 
-function BasicExample() {
+function AllUsers() {
   return (
     <Table striped bordered hover>
       <thead>
@@ -34,4 +34,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default AllUsers;
