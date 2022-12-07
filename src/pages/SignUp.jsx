@@ -10,7 +10,7 @@ const [form, setForm] = useState({})
 
   const submitPost = (e) => {
       e.preventDefault()
-      console.log(form)
+      // console.log(form)
 
     fetch('https://buying-real-estate-api-v-c7168.web.app/signup', {
       method: 'POST',
@@ -27,7 +27,7 @@ const [form, setForm] = useState({})
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  console.log(form)
+  // console.log(form)
 
   return (
     <Form onSubmit={submitPost}>

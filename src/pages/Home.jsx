@@ -6,7 +6,7 @@
 // import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import Video from '../components/Video';
-import Cards from '../components/Cards';
+import Cards from 'react-bootstrap/Card';
 
 export default function Home() {
     // const [user, setUser] = useState ([])

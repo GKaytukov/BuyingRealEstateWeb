@@ -16,14 +16,14 @@ const [form, setForm] = useState({})
       body: JSON.stringify(form),
     })
     alert("Message Sent")
-    console.log(form)
+    //  console.log(form)
   }
 
   const handleForm = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  console.log(form)
+  // console.log(form)
 
   return (
     <>

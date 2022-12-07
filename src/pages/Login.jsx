@@ -13,17 +13,17 @@ const [form, setForm] = useState({})
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(form),
+      body: JSON.stringify(form), //it convert JavaScript to JSON
     })
     alert("Message Sent")
-    console.log(form)
+    // console.log(form)
   }
 
   const handleForm = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
+    setForm({ ...form, [e.target.name]: e.target.value })// It puts spread operator It seperate the array //My objects in my database has a lot of components, I am breaking the subject because I just want the name only 
   }
 
-  console.log(form)
+  // console.log(form)
 
   return (
     <Form>

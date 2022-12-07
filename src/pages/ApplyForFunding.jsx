@@ -15,7 +15,7 @@ export default function ApplyForFunding() {
     e.preventDefault()
     const formData = new FormData(e.target),
           formDataObj = Object.fromEntries(formData.entries())
-          console.log(formDataObj)
+          // console.log(formDataObj)
   
     fetch('https://buying-real-estate-api-v-c7168.web.app/applyforfunding', {
     // fetch('http://127.0.0.1:4050/applyforfunding', {
@@ -28,13 +28,9 @@ export default function ApplyForFunding() {
     .then(response => response.json())
     .then(() => {
       alert("Message Sent")
-      // 
-      
-      navigate('/ChooseALender')
+      navigate('/allusers')
     })
   }
-
-  
 
 
   return (
@@ -149,22 +145,22 @@ export default function ApplyForFunding() {
 
 
         <InputGroup className="mb-3">
-        <h1>Please Check Box: 2 Most Recent Paystubs</h1>
+        <div>Please Check Box: 2 Most Recent Paystubs</div>
         <InputGroup.Checkbox aria-label="2 Most Recent Paystubs" />
         <Form.Control aria-label="Text input with checkbox" />
       </InputGroup>
       <InputGroup>
-      <h1>Please Check Box: 2 Months of your most Recent Bank Statement </h1>
+      <div>Please Check Box: 2 Months of your most Recent Bank Statement </div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>
       <InputGroup>
-      <h1>Please Check Box: 2 Most Recent Tax Returns</h1>
+      <div>Please Check Box: 2 Most Recent Tax Returns</div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>
       <InputGroup>
-      <h1>Please Check Box: For List of Other Income</h1>
+      <div>Please Check Box: For List of Other Income</div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
         <Form.Control aria-label="Text input with radio button" />
       </InputGroup>

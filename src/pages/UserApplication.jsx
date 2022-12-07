@@ -17,6 +17,9 @@ import Row from 'react-bootstrap/Row';
 //   terms: yup.bool().required().oneOf([true], 'terms must be accepted'),
 // });
 
+//DELETE THIS PAGE
+
+
 export default function FormExample() {
   return (
     <Form
