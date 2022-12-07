@@ -35,7 +35,7 @@ const [form, setForm] = useState({})
         <Form.Label>Email address</Form.Label>
 
         <Form.Control 
-        name='email' //Need name
+        name='email'
          type="email" placeholder="Enter email" 
          onChange={handleForm}/> {/*need onChange for each field */}
 

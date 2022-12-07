@@ -3,19 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-//import {Formik, Field }from 'formik';
 
-
-// const schema = yup.object().shape({
-//   firstName: yup.string().required(),
-//   lastName: yup.string().required(),
-//   username: yup.string().required(),
-//   city: yup.string().required(),
-//   state: yup.string().required(),
-//   zip: yup.string().required(),
-//   file: yup.mixed().required(),
-//   terms: yup.bool().required().oneOf([true], 'terms must be accepted'),
-// });
 
 //DELETE THIS PAGE
 
@@ -23,7 +11,6 @@ import Row from 'react-bootstrap/Row';
 export default function FormExample() {
   return (
     <Form
-      // validationSchema={schema}
       onSubmit={console.log}
       initialValues={{
         firstName: 'Mark',

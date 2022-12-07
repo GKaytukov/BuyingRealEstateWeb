@@ -1,3 +1,73 @@
+import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
+
+export default function AllUsers() {
+   const [allUsers, setAllUsers] = useState() 
+   
+
+   useEffect(() => { //Will do something when the page loads 
+    fetch('https://buying-real-estate-api-v-c7168.web.app/users')
+    //fetch('http://localhost:4050/users')
+            .then(response => response.json())
+            .then(data => setAllUsers(data)) 
+            .catch(err => console.error(err)); 
+   }, [setAllUsers]) // get All
+
+
+   return (
+    <Table striped bordered hover>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Application Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          allUsers
+          ? allUsers.map(user=> ( // condition ? if true : if false, if something exist below its true and if empty its false
+            <tr>
+            <td>{user.firstname}</td>
+            <td>{user.lastname}</td>
+            <td>Received</td>
+          </tr>
+          ))
+          : <p>Loading...</p>
+        }
+      </tbody>
+    </Table>   
+   )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import Table from 'react-bootstrap/Table';
 // import { useNavigate } from 'react-router-dom';
 // import { useState, useEffect } from 'react';
@@ -108,47 +178,3 @@
 //     </Table>
 //   );
 // }
-
-
-import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import Table from 'react-bootstrap/Table';
-
-export default function AllUsers() {
-   const [allUsers, setAllUsers] = useState()
-   
-
-   useEffect(() => {
-    fetch('https://buying-real-estate-api-v-c7168.web.app/users')
-    //fetch('http://localhost:4050/users')
-            .then(response => response.json())//convert to JSON 
-            .then(data => setAllUsers(data)) //get formatted data
-            .catch(err => console.error(err)); //Each one of these need a callback function  
-   }, [setAllUsers])
-
-
-   return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Application Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          allUsers
-          ? allUsers.map(user=> (
-            <tr>
-            <td>{user.firstname}</td>
-            <td>{user.lastname}</td>
-            <td>Received</td>
-          </tr>
-          ))
-          : <p>Loading...</p>
-        }
-      </tbody>
-    </Table>   
-   )
-}

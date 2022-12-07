@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 export default function NavMenu() {
     return (        
@@ -31,6 +31,5 @@ export default function NavMenu() {
       </Navbar>
     )
 }
-
 
 //Path from App.js

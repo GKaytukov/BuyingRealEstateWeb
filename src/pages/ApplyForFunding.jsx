@@ -12,7 +12,7 @@ export default function ApplyForFunding() {
 
   const submitPost = (e) => {
 
-    e.preventDefault()
+    e.preventDefault() //You prevent the refreshing of the page b/c it is single page
     const formData = new FormData(e.target),
           formDataObj = Object.fromEntries(formData.entries())
           // console.log(formDataObj)
@@ -45,12 +45,12 @@ export default function ApplyForFunding() {
         </Form.Group>
         <Form.Group as={Col} md="4" controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
-          <Form.Control   //<=== IT GOES IN THIS ATTRIBUTE
+          <Form.Control   
             required
             type="text"
             placeholder="First name"
             defaultValue="Mark"
-            name="firstname"    //<=== THIS ONE 
+            name="firstName"    
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -84,7 +84,7 @@ export default function ApplyForFunding() {
           placeholder="Address"
           defaultValue="Address"
           name="address"
-        />  {/*<==== ITS NOT HERE :( */}
+        />  
           <Form.Control.Feedback type="invalid">
             Please provide a valid address.
           </Form.Control.Feedback>
