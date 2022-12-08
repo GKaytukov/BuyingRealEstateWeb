@@ -37,19 +37,16 @@ export default function ChooseALender() {
     <>
     <h1>Choose A Lender</h1>
     <InputGroup className="mb-3">
-        <div>Fidelity Mortgage Brokers - 5447 N Federal Hwy, Fort Lauderdale, FL 33308 Contact: (716) 319-8592</div>
         <InputGroup.Checkbox aria-label="Mortgage Lender #1" />
-        <Form.Control aria-label="Text input with checkbox" />
+        <Form.Control aria-label="Text input with checkbox" value='Fidelity Mortgage Brokers - 5447 N Federal Hwy, Fort Lauderdale, FL 33308 Contact: (716) 319-8592'/>
       </InputGroup>
       <InputGroup className="mb-3">
-        <div>The Mortgage Firm, Inc. - 7000 W Palmetto Park Rd STE 306, Boca Raton, FL 33433 Contact: (561) 923-8471</div>
         <InputGroup.Checkbox aria-label="Mortgage Lender #2" />
-        <Form.Control aria-label="Text input with checkbox" />
+        <Form.Control aria-label="Text input with checkbox" value='The Mortgage Firm, Inc. - 7000 W Palmetto Park Rd STE 306, Boca Raton, FL 33433 Contact: (561) 923-8471'/>
       </InputGroup>
       <InputGroup className="mb-3">
-        <div>The Discount Mortgage Mortgage Store - 7452 Champagne Pl, Boca Raton, FL 33433 Contact: (561) 577-1882</div>
         <InputGroup.Checkbox aria-label="Mortgage Lender #3" />
-        <Form.Control aria-label="Text input with checkbox" />
+        <Form.Control aria-label="Text input with checkbox" value='The Discount Mortgage Mortgage Store - 7452 Champagne Pl, Boca Raton, FL 33433 Contact: (561) 577-1882'/>
       </InputGroup> 
 
 

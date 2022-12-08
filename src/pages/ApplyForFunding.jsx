@@ -17,7 +17,7 @@ export default function ApplyForFunding() {
           formDataObj = Object.fromEntries(formData.entries())
           // console.log(formDataObj)
   
-    fetch('https://buying-real-estate-api-v-c7168.web.app/applyforfunding', {
+    fetch('https://buying-real-estate-api-v-c7168.web.app/applyforfunding', { //my API endpoint
     // fetch('http://127.0.0.1:4050/applyforfunding', {
       method: 'POST',
       headers: {
@@ -142,27 +142,32 @@ export default function ApplyForFunding() {
           </Form.Control.Feedback>
         </Form.Group>
 
+        {/* <InputGroup className="mb-3">
+        <InputGroup.Checkbox aria-label="Mortgage Lender #1" />
+        <Form.Control aria-label="Text input with checkbox" value='Fidelity Mortgage Brokers - 5447 N Federal Hwy, Fort Lauderdale, FL 33308 Contact: (716) 319-8592'/>
+      </InputGroup> */}
+
 
 
         <InputGroup className="mb-3">
-        <div>Please Check Box: 2 Most Recent Paystubs</div>
+        <div></div>
         <InputGroup.Checkbox aria-label="2 Most Recent Paystubs" />
-        <Form.Control aria-label="Text input with checkbox" />
+        <Form.Control aria-label="Text input with checkbox" value='Please Check Box on the left, if you have you 2 Most Recent Paystubs' />
       </InputGroup>
       <InputGroup>
-      <div>Please Check Box: 2 Months of your most Recent Bank Statement </div>
+      <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" />
+        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have your 2 Months of your Most Recent Bank Statement ' />
       </InputGroup>
       <InputGroup>
-      <div>Please Check Box: 2 Most Recent Tax Returns</div>
+      <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" />
+        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have your 2 Most Recent Tax Returns' />
       </InputGroup>
       <InputGroup>
-      <div>Please Check Box: For List of Other Income</div>
+      <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" />
+        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have proof of Other Income' />
       </InputGroup>
       </Form.Group>
 

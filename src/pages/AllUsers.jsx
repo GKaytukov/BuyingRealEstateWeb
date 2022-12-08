@@ -3,16 +3,16 @@ import { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 
 export default function AllUsers() {
-   const [allUsers, setAllUsers] = useState() 
+   const [allUsers, setAllUsers] = useState() //React is watching  changes 
    
 
    useEffect(() => { //Will do something when the page loads 
     fetch('https://buying-real-estate-api-v-c7168.web.app/users')
     //fetch('http://localhost:4050/users')
-            .then(response => response.json())
-            .then(data => setAllUsers(data)) 
-            .catch(err => console.error(err)); 
-   }, [setAllUsers]) // get All
+            .then(response => response.json())//convert to JSON 
+            .then(data => setAllUsers(data)) //get formatted data
+            .catch(err => console.error(err)); //Each one of these need a callback function  
+   }, [setAllUsers])
 
 
    return (

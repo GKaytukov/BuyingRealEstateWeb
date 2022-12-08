@@ -4,6 +4,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup, Stack } from 'react-bootstrap';
 import img from '../assets/carousel.jpg';
+import img2 from '../assets/carousel3.jpg';
+import img3 from '../assets/carousel4.jpg';
 
 function ChoosingTheBestRealtor() {
   return (
@@ -14,7 +16,7 @@ function ChoosingTheBestRealtor() {
         <img
           src={img}
           alt="First slide"
-          height="600"
+          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
 
           />
         <Carousel.Caption>
@@ -23,30 +25,32 @@ function ChoosingTheBestRealtor() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+      <img
+          src={img2}
+          alt="First slide"
+          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
+
           />
 
           
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>Question #2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+      <img
+          src={img3}
+          alt="First slide"
+          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
+
           />
 
         
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Question #3</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
