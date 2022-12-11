@@ -29,7 +29,7 @@ export default function AllUsers() {
           allUsers
           ? allUsers.map(user=> ( // condition ? if true : if false, if something exist below its true and if empty its false
             <tr>
-            <td>{user.firstname}</td>
+            <td>{user.firstname || user.firstName}</td>
             <td>{user.lastname}</td>
             <td>Received</td>
           </tr>

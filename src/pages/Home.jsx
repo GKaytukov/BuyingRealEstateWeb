@@ -6,7 +6,8 @@ export default function Home() {
 return (
     <>
         {/* <h1>Qualifying to Buy Real Estate Made Easy</h1> */}
-        <h1>Qualifying to Buy Real Estate</h1>
+        <div style={{textAlign:'center'}}>
+        <h1>Qualifying to Buy a House Made Easy</h1></div>
         <Video />
         <Cards />
         {/* <AllPosts /> */}

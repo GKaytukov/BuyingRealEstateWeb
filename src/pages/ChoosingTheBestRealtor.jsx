@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup, Stack } from 'react-bootstrap';
-import img from '../assets/carousel.jpg';
+import img from '../assets/carousel8.jpg';
 import img2 from '../assets/carousel3.jpg';
 import img3 from '../assets/carousel4.jpg';
 
@@ -43,7 +43,7 @@ function ChoosingTheBestRealtor() {
       <img
           src={img3}
           alt="First slide"
-          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
+          style={{objectFit: 'cover', width: '100vw', height: '95vh', objectPosition: 'top'}}
 
           />
 

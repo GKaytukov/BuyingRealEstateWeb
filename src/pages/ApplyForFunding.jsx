@@ -147,30 +147,30 @@ export default function ApplyForFunding() {
         <Form.Control aria-label="Text input with checkbox" value='Fidelity Mortgage Brokers - 5447 N Federal Hwy, Fort Lauderdale, FL 33308 Contact: (716) 319-8592'/>
       </InputGroup> */}
 
-
+      <h1>List of Required Documents to Submit to your Lender of Choice:</h1>
 
         <InputGroup className="mb-3">
         <div></div>
         <InputGroup.Checkbox aria-label="2 Most Recent Paystubs" />
-        <Form.Control aria-label="Text input with checkbox" value='Please Check Box on the left, if you have you 2 Most Recent Paystubs' />
+        <Form.Control aria-label="Text input with checkbox" value='Please Check the Box on the left, if you have your "2 Most Recent Paystubs & Proof of Any Other Income to be considered for the loan" to submit to your lender.' />
       </InputGroup>
       <InputGroup>
       <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have your 2 Months of your Most Recent Bank Statement ' />
+        <Form.Control aria-label="Text input with radio button" value='Please Check the Box on the left, if you have your "2 Months of your Most Recent Bank Statements" to submit to your lender. ' />
       </InputGroup>
       <InputGroup>
       <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have your 2 Most Recent Tax Returns' />
+        <Form.Control aria-label="Text input with radio button" value='Please Check the Box on the left, if you have your "The Past 2 Years of your Signed Personal &/or Business Tax Returns" to submit to your lender.' />
       </InputGroup>
       <InputGroup>
       <div></div>
         <InputGroup.Checkbox aria-label="Radio button for following text input" />
-        <Form.Control aria-label="Text input with radio button" value='Please Check Box on the left, if you have proof of Other Income' />
+        <Form.Control aria-label="Text input with radio button" value='Please Check the Box on the left, if you have your "Down Payment Amount and your Desired Mortgage Payment" to submit to your lender.' />
       </InputGroup>
       </Form.Group>
-
+      <div>Once you have confirmed you have all the requested documents listed above to submit to your Lender, please click on the Submit Button down below.</div>
       <Button variant="primary" type="submit">
         Submit
       </Button>

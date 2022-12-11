@@ -2,6 +2,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup } from 'react-bootstrap';
+import img from '../assets/carousel6.jpg';
 
 export default function ChooseALender() {
   const navigate = useNavigate()
@@ -48,6 +49,13 @@ export default function ChooseALender() {
         <InputGroup.Checkbox aria-label="Mortgage Lender #3" />
         <Form.Control aria-label="Text input with checkbox" value='The Discount Mortgage Mortgage Store - 7452 Champagne Pl, Boca Raton, FL 33433 Contact: (561) 577-1882'/>
       </InputGroup> 
+
+      <img
+          src={img}
+          alt=""
+          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
+
+          />
 
 
     </>

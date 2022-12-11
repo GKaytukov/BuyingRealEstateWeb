@@ -1,8 +1,11 @@
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useState } from 'react' 
+import img from '../assets/carousel15.jpg';
+
 export default function ContactUs() {
 const [form, setForm] = useState({})
+
 
   const submitPost = (e) => {
     e.preventDefault()
@@ -26,7 +29,8 @@ const [form, setForm] = useState({})
 
   return (
     <>
-      <form action='submit'>
+    <div>
+      {/* <form action='submit'>
         <label htmlFor=''>Contact Us</label>
         <input name='Contact Us' type='text' onChange={handleForm} />
         <br />
@@ -39,7 +43,14 @@ const [form, setForm] = useState({})
         <button type='submit' onClick={submitPost}>
           Add new post
         </button>
-      </form>
+      </form> */}
+      <img
+          src={img}
+          alt=""
+          style={{objectFit: 'cover', width: '100vw', height: '95vh'}}
+
+          />
+          </div>
     </>
   );
 }

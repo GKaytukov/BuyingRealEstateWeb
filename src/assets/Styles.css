@@ -56,4 +56,13 @@
     height: 90vh;
     object-fit: cover;
   }
-  
+
+  .about-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-collapse, .navbar-collapse>.me-auto{
+    margin-right: 0 !important;
+    justify-content: center !important;
+  }
