@@ -2,7 +2,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup } from 'react-bootstrap';
-import img from '../assets/carousel6.jpg';
+import img from '../assets/carousel20.jpg';
 
 export default function ChooseALender() {
   const navigate = useNavigate()

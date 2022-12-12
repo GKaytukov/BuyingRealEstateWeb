@@ -8,20 +8,19 @@ function AboutUs() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>About Us</Accordion.Header>
         <Accordion.Body>
-        We specializes in assisting NFL Players with the purchase of Commercial Real Estate Investments, 
-//         Multi-Family Communities, Wholesale Off Market Flips, Bulk REO Deals from the lender for pennies on the dollar and Luxury Residential Homes. 
-//         Our clientele ranges from NFL Players, athletes, celebrities, cash buyers, investors, and international buyers. Elite Celebrity Realty, Inc. 
-//         recently sold an NFL Player over $23 million worth of apartment buildings in the state of Florida. Elite Celebrity Realty specializes in assisting 
-//         NFL Players purchase C-Class Apartment Complexes that can be renovated into B-Class Apartment Complexes with capital improvements such as painting the exterior, 
-//         repairing a pool,upgrading a pool, adding a pool, adding a playground, adding a clubhouse, adding a fitness center, upgrading the exterior lighting, upgrading the landscaping, 
-//         new windows, new doors, and more instantly increasing the value of the asset. All while we focus on important issues such as encouraging an in-house onsite management staff, 
-//         improving low occupancy, reducing expenses, increasing low rents, and finding the most cost-effective CRM Customer Relationship Management system for better client-to-tenant engagement.
-//         Text input with checkbox"
+          <h1>What is the Purpose of this Site?</h1>
+        <div>• The purpose of this website to educate everyday people, how easy it truly is to qualify to buy real estate and build generational wealth and financial independence. 
+                And even if you do not qualify at this present time for a Mortgage Pre-Approval Letter, we will layout a road map to help you gather all the essential documents needed to obtain a future Pre-Approval Letter.</div>
+        <br></br>
+
+        <div>• We are here to help you begin with the very first step of Phase 1 to getting your Mortgage Pre-Approval Letter from the Lender. The Mortgage Pre-Approval Letter from the Lender 
+                means that the Lender has completed a full review of your Creditworthiness via a credit check to determined the likelihood that you will qualify for a home loan and that the lender has also verified your income, your financials that you have enough down payment money and closing costs to pay at closing and lastly the Lender will determine approximately for how much they are willing to lend you to buy your desired home. And once your Approved, your Pre-Approval Letter is normally good for 60 to 90 calendar days. 
+</div>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion defaultActiveKey={['0']} alwaysOpen>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>How Does it Work?</Accordion.Header>
+        <Accordion.Header>How Does it Work? *Click Here*</Accordion.Header>
         <Accordion.Body>
 
         <h1>7 Easy Steps to Get a Pre-Approval Letter From Your Lender: </h1>
@@ -29,9 +28,9 @@ function AboutUs() {
         <br></br>
 
 
-<div>• Step 1: Click the tab called "Applying for Funding" </div>
+<div>• Step 1: Click the tab called "Apply for Funding" </div>
 
-<div>• Step 2: Fill out the Intake Form and have all requested documents collected to be submitted to the lender of your choice. 
+<div>• Step 2: Fill out the Intake Form and then confirm that you have all requested documents ready for submission and then click the submit button. 
 </div>
 
 <div>	• Step 3: Once you Click on the submit tab it will automatically take you to the tab called "All Users" to confirm your Application Status confirming receipt of your Application. 
