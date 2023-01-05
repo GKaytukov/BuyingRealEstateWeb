@@ -23,8 +23,8 @@ function ChoosingTheBestRealtor() {
 
           />
         <Carousel.Caption>
-          <h3>When Choosing the Best Realtor...</h3>
-          <p>First, you should look for a Full-Time Agent with at least 15 years or more of experience!</p>
+          <h3 style={{color: "white"}}>When Choosing the Best Realtor...</h3>
+          <p style={{color: "white"}}>First, you should look for a Full-Time Agent with at least 15 years or more of experience!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

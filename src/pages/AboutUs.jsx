@@ -9,12 +9,14 @@ function AboutUs() {
         <Accordion.Header>About Us</Accordion.Header>
         <Accordion.Body>
           <h1>What is the Purpose of this Site?</h1>
-        <div>• The purpose of this website to educate everyday people, how easy it truly is to qualify to buy real estate and build generational wealth and financial independence. 
+        <div>• The purpose of this website to educate everyday people, how easy it is to qualify to buy real estate and build generational wealth. 
                 And even if you do not qualify at this present time for a Mortgage Pre-Approval Letter, we will layout a road map to help you gather all the essential documents needed to obtain a future Pre-Approval Letter.</div>
         <br></br>
 
-        <div>• We are here to help you begin with the very first step of Phase 1 to getting your Mortgage Pre-Approval Letter from the Lender. The Mortgage Pre-Approval Letter from the Lender 
-                means that the Lender has completed a full review of your Creditworthiness via a credit check to determined the likelihood that you will qualify for a home loan and that the lender has also verified your income, your financials that you have enough down payment money and closing costs to pay at closing and lastly the Lender will determine approximately for how much they are willing to lend you to buy your desired home. And once your Approved, your Pre-Approval Letter is normally good for 60 to 90 calendar days. 
+        <div>• A Mortgage Pre-Approval Letter from the Lender means that the Lender has completed a full review of your Creditworthiness via a credit check 
+          to determined the likelihood that you will qualify for a home loan and that the lender has also verified your income, then confirm that you have enough 
+          down payment money and closing costs to pay at closing and lastly the Lender will determine approximately for how much they are willing to lend you to buy your desired home. 
+          And once your Approved, your Pre-Approval Letter is normally good for 60 to 90 calendar days. 
 </div>
         </Accordion.Body>
       </Accordion.Item>

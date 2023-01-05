@@ -66,3 +66,13 @@
     margin-right: 0 !important;
     justify-content: center !important;
   }
+
+  h3 {
+    color: white;
+    font-size: calc(8px + 2vmin);
+  }
+
+  p {
+    color: white;
+    font-size: calc(8px + 2vmin);
+  }
